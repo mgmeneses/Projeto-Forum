@@ -1,33 +1,58 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - projeto_forum</title>
+    <title>@ViewData["Title"] - Fórum</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">projeto_forum</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" asp-action="Index" asp-controller="Home">Fórum</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Index" asp-controller="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Index" asp-controller="Forum">Forums</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Index" asp-controller="Message">Messages</a>
+                </li>
+                @if (User.IsInRole(Roles.Administrator)) {
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Manage
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" asp-controller="User" asp-action="Index">Users</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" asp-controller="Forum" asp-action="Create">Create Forum</a>
+                        </div>
+                    </li>
+                }
+            </ul>
+            <div class="pull-right">
+                @if (!User.Identity.IsAuthenticated) {
+                    <div class="btn-group btn-group-sm">
+                        <a class="btn btn-secondary btn-info" asp-controller="User" asp-action="LogIn">Log In</a>
+                        <a class="btn btn-secondary btn-info" asp-controller="User" asp-action="Register">Register</a>
+                    </div>
+                } else {
+                    <div class="btn-group btn-group-sm">
+                        <a class="btn btn-secondary btn-info" asp-controller="User" asp-action="Detail" asp-route-name="@User.Identity.Name">
+                            My Account
+                        </a>
+                        <a class="btn btn-secondary btn-info" asp-controller="User" asp-action="LogOut">Log Out</a>
+                    </div>
+                }
             </div>
-        </nav>
+        </div>
+    </nav>
+    <div class="container">
     </header>
     <div class="container">
         <main role="main" class="pb-3">

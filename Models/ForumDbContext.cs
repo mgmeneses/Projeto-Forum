@@ -1,20 +1,12 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+using System.IO;
+using Microsoft.Extensions.Configuration;
 
 namespace projeto_forum.Models
 {
-    public partial class DbContext : DbContext
+    public partial class ForumDbContext : DbContext
     {
-        public DbContext()
-        {
-        }
-
-        public DbContext(DbContextOptions<DbContext> options)
-            : base(options)
-        {
-        }
-
         public virtual DbSet<Forum> Forum { get; set; }
         public virtual DbSet<Message> Message { get; set; }
         public virtual DbSet<Topic> Topic { get; set; }
@@ -24,8 +16,11 @@ namespace projeto_forum.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=MARCELO-PC\\SQLEXPRESS;Initial Catalog=forumDB;Integrated Security=True");
+                var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json");
+                var configuration = builder.Build();
+                optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
             }
         }
 
