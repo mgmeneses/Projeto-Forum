@@ -20521,8 +20521,33 @@
   "RootNamespace": "projeto_forum",
   "Documents": [
     {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Topic\\Create.cshtml",
+      "TargetPath": "Views\\Topic\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\projeto\\projeto-forum\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Error\\Index.cshtml",
+      "TargetPath": "Views\\Error\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Shared\\_ForumDetail.cshtml",
+      "TargetPath": "Views\\Shared\\_ForumDetail.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Forum\\Index.cshtml",
+      "TargetPath": "Views\\Forum\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Topic\\Detail.cshtml",
+      "TargetPath": "Views\\Topic\\Detail.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20536,8 +20561,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Message\\Detail.cshtml",
+      "TargetPath": "Views\\Message\\Detail.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Forum\\Detail.cshtml",
+      "TargetPath": "Views\\Forum\\Detail.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Forum\\Edit.cshtml",
+      "TargetPath": "Views\\Forum\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20546,8 +20581,63 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Shared\\_TopicEditing.cshtml",
+      "TargetPath": "Views\\Shared\\_TopicEditing.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Topic\\Delete.cshtml",
+      "TargetPath": "Views\\Topic\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Topic\\Edit.cshtml",
+      "TargetPath": "Views\\Topic\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Shared\\_TopicReading.cshtml",
+      "TargetPath": "Views\\Shared\\_TopicReading.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Forum\\Delete.cshtml",
+      "TargetPath": "Views\\Forum\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Error\\AccessDenied.cshtml",
+      "TargetPath": "Views\\Error\\AccessDenied.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Shared\\_MessageList.cshtml",
+      "TargetPath": "Views\\Shared\\_MessageList.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Topic\\Index.cshtml",
+      "TargetPath": "Views\\Topic\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Message\\Index.cshtml",
+      "TargetPath": "Views\\Message\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Forum\\Create.cshtml",
+      "TargetPath": "Views\\Forum\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\projeto\\projeto-forum\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Topic\\Reply.cshtml",
+      "TargetPath": "Views\\Topic\\Reply.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20563,6 +20653,11 @@
     {
       "FilePath": "c:\\projeto\\projeto-forum\\Views\\User\\Register.cshtml",
       "TargetPath": "Views\\User\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto\\projeto-forum\\Views\\Message\\Create.cshtml",
+      "TargetPath": "Views\\Message\\Create.cshtml",
       "FileKind": "mvc"
     },
     {

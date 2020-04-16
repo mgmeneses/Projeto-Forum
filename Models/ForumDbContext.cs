@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.EntityFrameworkCore;
 using System.IO;
 using Microsoft.Extensions.Configuration;
@@ -7,6 +7,10 @@ namespace projeto_forum.Models
 {
     public partial class ForumDbContext : DbContext
     {
+        public ForumDbContext(DbContextOptions<ForumDbContext> option): base(option)
+        {
+
+        }
         public virtual DbSet<Forum> Forum { get; set; }
         public virtual DbSet<Message> Message { get; set; }
         public virtual DbSet<Topic> Topic { get; set; }

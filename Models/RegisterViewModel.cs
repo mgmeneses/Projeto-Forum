@@ -4,13 +4,13 @@ namespace projeto_forum.Models
 {
     public class RegisterViewModel
     {
-        [Required, DisplayName("Digite o seu Nome!")]
+        [Required, DisplayName("Nome")]
         public string Name { get; set; }
-        [Required, DisplayName("Digite uma senha!")]
+        [Required, DisplayName("Senha")]
         public string Password { get; set; }
-        [Required, DisplayName("confirme sua senha!")]
+        [Required, DisplayName("Confirme Senha")]
         public string RepeatPassword { get; set; }
-        [Required, DisplayName("As senha devem ser identicas!")]
+        [Required, DisplayName("Descrição")]
         public string Description { get; set; }
         
     }

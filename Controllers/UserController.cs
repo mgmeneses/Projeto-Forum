@@ -36,8 +36,9 @@ namespace User.Controllers{
             model.Password = model.Password.Trim();
             model.RepeatPassword = model.RepeatPassword.Trim();
 
-            var targetUser = _dbContext.User
-                .SingleOrDefault(u => u.Name.Equals(model.Name, StringComparison.CurrentCultureIgnoreCase));
+            projeto_forum.Models.User user = _dbContext.User
+                            .SingleOrDefault(u => u.Name.Equals(model.Name, StringComparison.CurrentCultureIgnoreCase));
+            var targetUser = user;
 
             if (targetUser != null) {
                 throw new Exception("User name already exists.");

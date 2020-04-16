@@ -1,0 +1,8 @@
+﻿﻿@using projeto_forum.Models
+@model Forum
+@{
+    ViewBag.Title = "Forum Detail";
+    ViewData["Mode"] = "ShowingDetail";
+}
+
+@Html.Partial("_ForumDetail", Model)
